@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 class StudentView(View):
 
-	# get method
+	# get method for testing my app and urls nothing of importances here
 	def get(self, request, id):
 		return HttpResponse('<h1>the requested student is {} </h1>'.format(id))
 
-# Create your views here.
+

@@ -2,6 +2,7 @@ from rest_framework import serializers
 from Nipo_student import models
 
 
+# Serializers for student, school
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Student

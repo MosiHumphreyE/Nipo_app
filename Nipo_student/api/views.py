@@ -1,8 +1,9 @@
 from rest_framework import viewsets, filters
-
 from Nipo_student import models
 from Nipo_student.api import Serializers
 
+
+# ViewSets that consumers the data from the serializers
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = models.Student.objects.all()
     serializer_class = Serializers.StudentSerializer
