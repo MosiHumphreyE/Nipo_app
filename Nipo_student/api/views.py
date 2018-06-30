@@ -11,5 +11,5 @@ class StudentViewSet(viewsets.ModelViewSet):
 
 class SchoolViewSet(viewsets.ModelViewSet):
     queryset = models.School.objects.all()
-    serializer_class = Serializers.StudentSerializer
+    serializer_class = Serializers.SchoolSerializer
     http_method_names = ['get', 'post', 'put', 'head', 'patch']
